@@ -8,8 +8,11 @@ public class Main {
         System.out.println(dev2.getSalary());
 
         Technology tech1 = new Technology("Java", 500);
-
+        Technology tech2 = new Technology("JavaScript", 1000);
         dev2.addTechnology(tech1);
-        dev2.getSalary();
+        dev2.addTechnology(tech2);
+        System.out.println(dev2.getSalary());
+
+        System.out.println(dev2.showKnownTechnology());
     }
 }

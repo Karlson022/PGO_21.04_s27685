@@ -7,6 +7,11 @@ public class Technology {
         this.salaryBonus = bonus;
     }
 
+    @Override
+    public String toString() {
+        return this.techName;
+    }
+
     public String getTechName() {
         return techName;
     }
