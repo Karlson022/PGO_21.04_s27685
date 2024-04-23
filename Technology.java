@@ -7,5 +7,23 @@ public class Technology {
         this.salaryBonus = bonus;
     }
 
+    public String getTechName() {
+        return techName;
+    }
+
+    public void setTechName(String techName) {
+        this.techName = techName;
+    }
+
+    public int getSalaryBonus() {
+        return salaryBonus;
+    }
+
+    public void setSalaryBonus(int salaryBonus) {
+        this.salaryBonus = salaryBonus;
+    }
+
+    
+
     
 }

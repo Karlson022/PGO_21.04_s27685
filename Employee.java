@@ -7,6 +7,9 @@ public class Employee {
     protected String empPesel;
     protected int empStartDate;
     protected int baseSalary = 3000;
+    protected int currentYear = 2024;
+    protected int salary;
+    
 
     public Employee(String name, String surname, String city, String email, String pesel, int startDate){
         this.empName = name;
@@ -15,6 +18,11 @@ public class Employee {
         this.empEmail = email;
         this.empPesel = pesel;
         this.empStartDate = startDate;
+        this.salary = this.baseSalary + ((this.currentYear - startDate)*1000);
+    }
+
+    public int getSalary() {
+        return salary;
     }
 
     public String getEmpName() {
