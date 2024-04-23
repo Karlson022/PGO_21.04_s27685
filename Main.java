@@ -14,5 +14,11 @@ public class Main {
         System.out.println(dev2.getSalary());
 
         System.out.println(dev2.showKnownTechnology());
+
+        Tester tester1 = new Tester("Andrew", "Nowak", "Krakow", "annowak@gmail.com", "23312345567", 2024);
+
+        tester1.addTestType("Integracje");
+        System.out.println(tester1.getTestList());
+        System.out.println(tester1.getSalary());
     }
 }

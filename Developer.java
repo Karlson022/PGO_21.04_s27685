@@ -8,9 +8,9 @@ public class Developer extends Employee{
         super(name, surname, city, email, pesel, startDate); 
     }
 
-    public void addTechnology(Technology techn){
-        salary += techn.salaryBonus;
-        this.tech.add(techn);
+    public void addTechnology(Technology newTech){
+        salary += newTech.salaryBonus;
+        this.tech.add(newTech);
     }
 
     public String showKnownTechnology(){
