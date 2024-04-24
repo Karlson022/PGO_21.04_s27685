@@ -4,6 +4,7 @@ public class Goal {
     protected int goalMonth;
     protected int goalDay;
     protected int goalBonus;
+    protected int currentMonth;
 
     public Goal(int year, int month, int day, String name, int bonus){
         this.goalYear = year;

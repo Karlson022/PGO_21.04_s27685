@@ -8,5 +8,17 @@ public class Manager extends Employee{
         super(name, surname, city, email, pesel, startDate);
     }
 
+    public void addGoals(Goal g){
+        this.goalList.add(g); 
+    }
+
+
+    public String getGoalList() {
+        return this.empName + " have these goals :" + this.goalList.toString();
+    }
+
+    public void setGoalList(ArrayList<Goal> goalList) {
+        this.goalList = goalList;
+    }
     
 }

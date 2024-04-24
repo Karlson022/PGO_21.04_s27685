@@ -1,24 +1,29 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
-        
-        Developer dev1 = new Developer("Karol", "Kowalski", "Warsaw", "kakowalski@gmail.com", "022530022341", 2002);
-        Developer dev2 = new Developer("Karol", "Kowalski", "Warsaw", "kakowalski@gmail.com", "022530022341", 2023);
+        ArrayList<Employee> employees =  new ArrayList<>();
 
-        System.out.println(dev1.getSalary());
-        System.out.println(dev2.getSalary());
+        Developer dev = new Developer("John", "Doe", "New York", "john@doe.com", "123456789", 2020);
+        Technology t = new Technology("Java", 800);
+        dev.addTechnology(t);   
+        employees.add(dev);
 
-        Technology tech1 = new Technology("Java", 500);
-        Technology tech2 = new Technology("JavaScript", 1000);
-        dev2.addTechnology(tech1);
-        dev2.addTechnology(tech2);
-        System.out.println(dev2.getSalary());
+        Tester tester = new Tester("Jane", "Smith", "Los Angeles", "jane@smith.com", "987654321", 2021);
+        tester.addTestType("UI/UX");
+        employees.add(tester);
 
-        System.out.println(dev2.showKnownTechnology());
+        Manager manager = new Manager("Bob", "Johnson", "Chicago", "bob@johnson.com", "1122334455", 2019);
+        Goal g = new Goal(2010, 10, 15, "Implementing FB login", 1000);
+        manager.addGoals(g);
+        employees.add(manager);
 
-        Tester tester1 = new Tester("Andrew", "Nowak", "Krakow", "annowak@gmail.com", "23312345567", 2024);
+        int totalAmount = 0;
 
-        tester1.addTestType("Integracje");
-        System.out.println(tester1.getTestList());
-        System.out.println(tester1.getSalary());
+        for(Employee employee : employees){
+            totalAmount += employee.getSalary();
+        }
+
+        System.out.println("Total amount to be paid this month: " + totalAmount + " USD");
     }
 }
