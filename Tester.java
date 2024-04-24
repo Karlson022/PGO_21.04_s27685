@@ -10,7 +10,7 @@ public class Tester extends Employee{
     }
 
     public void addTestType(String testType){
-        salary += testBonus;
+        this.salary += testBonus;
         this.testList.add(testType); 
     }
 

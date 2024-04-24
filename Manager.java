@@ -9,6 +9,9 @@ public class Manager extends Employee{
     }
 
     public void addGoals(Goal g){
+        if(g.goalMonth == g.currentMonth){
+            this.salary+=g.goalBonus;
+        }
         this.goalList.add(g); 
     }
 

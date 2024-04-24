@@ -9,7 +9,7 @@ public class Developer extends Employee{
     }
 
     public void addTechnology(Technology newTech){
-        salary += newTech.salaryBonus;
+        this.salary += newTech.salaryBonus;
         this.tech.add(newTech);
     }
 
