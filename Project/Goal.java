@@ -1,3 +1,4 @@
+package Project;
 public class Goal {
     protected String goalName;
     protected int goalYear;

@@ -1,3 +1,4 @@
+package Project;
 public class Technology {
     protected String techName;
     protected int salaryBonus;
